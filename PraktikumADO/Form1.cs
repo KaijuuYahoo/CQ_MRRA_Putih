@@ -15,13 +15,25 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Source = DESKTOP - C6LEFON\\KAIJUURUN; Initial Catalog = YourDatabaseName; Integrated Security = True"
+                "Data Source = DESKTOP - C6LEFON\\KAIJUURUN; Initial Catalog = DBAkademikADO; Integrated Security = True"
                 );
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnConnect_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi();
+                conn.Open();
+                MessageBox.Show("Koneksi ke Database Berhasil");
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
+
     }
 }
