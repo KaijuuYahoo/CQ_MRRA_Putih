@@ -19,6 +19,7 @@ namespace PraktikumADO
                 );
         }
 
+        //Membuka Koneksi Database 
         private void btnConnect_Click(object sender, EventArgs e)
         {
             try
@@ -34,6 +35,7 @@ namespace PraktikumADO
             }
         }
 
+        //Menggunakan ExecuteScalar() - Menghitung Jumlah Mahasiswa
         private void btnHitungMhs_Click(object sender, EventArgs e)
         {
             try
@@ -53,6 +55,7 @@ namespace PraktikumADO
             }
         }
 
+        //Menghitung Jumlah Mata Kuliah dengan ExecuteScalar()
         private void btnHitungMK_Click(object sender, EventArgs e)
         {
             try
@@ -72,6 +75,7 @@ namespace PraktikumADO
             }
         }
 
+        //Mengupdate  Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001 dengan ExecuteNonQuery()
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -90,6 +94,7 @@ namespace PraktikumADO
             }
         }
 
+        //Menghitung Jumlah Dosen dengan ExecuteScalar()
         private void btnHitungDs_Click(object sender, EventArgs e)
         {
             try
@@ -109,6 +114,7 @@ namespace PraktikumADO
             }
         }
 
+        //Mengupdate  MataKuliah SET SKS=4 WHERE KodeMK = 'IF20101' dengan ExecuteNonQuery()
         private void btnUpdateNew_Click(object sender, EventArgs e)
         {
             try
@@ -127,6 +133,7 @@ namespace PraktikumADO
             }
         }
 
+        //Menginsert ProgramStudi VALUES ('MI01','Manajemen Informatika') dengan ExecuteNonQuery()
         private void btnInsert_Click(object sender, EventArgs e)
         {
             try
