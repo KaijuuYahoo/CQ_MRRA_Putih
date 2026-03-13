@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHasil = new System.Windows.Forms.TextBox();
             this.Connect = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -55,12 +55,12 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 1;
             // 
-            // textBox1
+            // txtHasil
             // 
-            this.textBox1.Location = new System.Drawing.Point(249, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtHasil.Location = new System.Drawing.Point(249, 131);
+            this.txtHasil.Name = "txtHasil";
+            this.txtHasil.Size = new System.Drawing.Size(373, 20);
+            this.txtHasil.TabIndex = 2;
             // 
             // Connect
             // 
@@ -98,6 +98,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Hitung Mhs";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnHitungMhs_Click);
             // 
             // Form1
             // 
@@ -108,7 +109,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Connect);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -122,7 +123,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHasil;
         private System.Windows.Forms.Button Connect;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

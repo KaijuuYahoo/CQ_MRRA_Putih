@@ -34,6 +34,23 @@ namespace PraktikumADO
             }
         }
 
-
+        private void btnHitungMhs_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Mahasiswa";
+                cmd = new SqlCommand(query, conn);
+                int Jumlah = (int)cmd.ExecuteScalar();
+                txtHasil.Text = Jumlah.ToString();
+                MessageBox.Show("Koneksi ke Database Berhasil");
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
